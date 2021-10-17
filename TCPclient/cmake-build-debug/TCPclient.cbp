@@ -37,13 +37,14 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="TCPclient">
-				<Option output="/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/TCPclient" prefix_auto="0" extension_auto="0"/>
+			<Target title="main">
+				<Option output="/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/york/CLionProjects/socketTest/TCPclient/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
@@ -51,19 +52,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 TCPclient"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
 					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="TCPclient/fast">
-				<Option output="/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/TCPclient" prefix_auto="0" extension_auto="0"/>
+			<Target title="main/fast">
+				<Option output="/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/york/CLionProjects/socketTest/TCPclient/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
@@ -71,7 +73,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 TCPclient/fast"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
 					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -79,7 +81,7 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/york/CLionProjects/socketTest/TCPclient/main.c">
-			<Option target="TCPclient"/>
+			<Option target="main"/>
 		</Unit>
 		<Unit filename="/home/york/CLionProjects/socketTest/TCPclient/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

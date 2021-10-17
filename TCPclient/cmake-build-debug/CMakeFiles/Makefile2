@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/york/CLionProjects/socketTest/TCPclient/cmake-build-deb
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/TCPclient.dir/all
+all: CMakeFiles/main.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/TCPclient.dir/clean
+clean: CMakeFiles/main.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/TCPclient.dir
+# Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/TCPclient.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TCPclient.dir/build.make CMakeFiles/TCPclient.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TCPclient.dir/build.make CMakeFiles/TCPclient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target TCPclient"
-.PHONY : CMakeFiles/TCPclient.dir/all
+CMakeFiles/main.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/TCPclient.dir/rule: cmake_check_build_system
+CMakeFiles/main.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/TCPclient.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/TCPclient.dir/rule
+.PHONY : CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-TCPclient: CMakeFiles/TCPclient.dir/rule
-.PHONY : TCPclient
+main: CMakeFiles/main.dir/rule
+.PHONY : main
 
 # clean rule for target.
-CMakeFiles/TCPclient.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TCPclient.dir/build.make CMakeFiles/TCPclient.dir/clean
-.PHONY : CMakeFiles/TCPclient.dir/clean
+CMakeFiles/main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

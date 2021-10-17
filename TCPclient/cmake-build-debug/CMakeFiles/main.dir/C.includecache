@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/io_utils.h
+stdio.h
+-
+limits.h
+-
+
+/home/york/CLionProjects/socketTest/TCPclient/main.c
+string.h
+-
+stdlib.h
+-
+io_utils.h
+-
+unistd.h
+-
+arpa/inet.h
+-
+

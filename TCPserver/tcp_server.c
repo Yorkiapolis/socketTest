@@ -11,6 +11,8 @@
 #define ECHO_SERVICE_PORT 1035
 #define DEBUG 0
 
+mtx_t mutex;
+
 typedef int SockDes;
 typedef struct {
     struct sockaddr_in cliaddr;
@@ -29,6 +31,7 @@ int Process_T(const ComCliaddr *cliaddrArg) {
             PRINTLNF("receive from client@[%s]: %s", cliaddr, buf);
             fflush(stdout);
             thrd_sleep(&(struct timespec) {.tv_sec=2,}, NULL);
+
             write(cliaddrArg->_sock, buf, strlen(buf));
         } else if (_recvLen == 0) {
             cliaddrArg->callback(cliaddr, cliaddrArg->_sock);

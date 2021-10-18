@@ -1,0 +1,14 @@
+/home/york/CLionProjects/socketTest/TCPserver/CMakeFiles/install/strip.dir
+/home/york/CLionProjects/socketTest/TCPserver/CMakeFiles/install/local.dir
+/home/york/CLionProjects/socketTest/TCPserver/CMakeFiles/tcp_server.dir
+/home/york/CLionProjects/socketTest/TCPserver/CMakeFiles/edit_cache.dir
+/home/york/CLionProjects/socketTest/TCPserver/CMakeFiles/rebuild_cache.dir
+/home/york/CLionProjects/socketTest/TCPserver/CMakeFiles/install.dir
+/home/york/CLionProjects/socketTest/TCPserver/CMakeFiles/list_install_components.dir
+/home/york/CLionProjects/socketTest/TCPserver/threadutils/CMakeFiles/install/strip.dir
+/home/york/CLionProjects/socketTest/TCPserver/threadutils/CMakeFiles/install/local.dir
+/home/york/CLionProjects/socketTest/TCPserver/threadutils/CMakeFiles/threadutils.dir
+/home/york/CLionProjects/socketTest/TCPserver/threadutils/CMakeFiles/edit_cache.dir
+/home/york/CLionProjects/socketTest/TCPserver/threadutils/CMakeFiles/rebuild_cache.dir
+/home/york/CLionProjects/socketTest/TCPserver/threadutils/CMakeFiles/install.dir
+/home/york/CLionProjects/socketTest/TCPserver/threadutils/CMakeFiles/list_install_components.dir

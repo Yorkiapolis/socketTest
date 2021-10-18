@@ -1,0 +1,7 @@
+/home/york/CLionProjects/socketTest/TCPclient/CMakeFiles/install/strip.dir
+/home/york/CLionProjects/socketTest/TCPclient/CMakeFiles/install/local.dir
+/home/york/CLionProjects/socketTest/TCPclient/CMakeFiles/tcp_client.dir
+/home/york/CLionProjects/socketTest/TCPclient/CMakeFiles/edit_cache.dir
+/home/york/CLionProjects/socketTest/TCPclient/CMakeFiles/rebuild_cache.dir
+/home/york/CLionProjects/socketTest/TCPclient/CMakeFiles/install.dir
+/home/york/CLionProjects/socketTest/TCPclient/CMakeFiles/list_install_components.dir

@@ -21,4 +21,3 @@ foreach (file ${files})
     install(TARGETS ${name}
             RUNTIME DESTINATION bin)
 endforeach ()
-

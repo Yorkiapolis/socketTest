@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/164/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /opt/cmake-3.20.0/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/164/bin/cmake/linux/bin/cmake -E rm -f
+RM = /opt/cmake-3.20.0/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -69,15 +69,15 @@ include threadutils/CMakeFiles/threadutils.dir/flags.make
 threadutils/CMakeFiles/threadutils.dir/tinycthread.c.o: threadutils/CMakeFiles/threadutils.dir/flags.make
 threadutils/CMakeFiles/threadutils.dir/tinycthread.c.o: ../threadutils/tinycthread.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object threadutils/CMakeFiles/threadutils.dir/tinycthread.c.o"
-	cd /home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/threadutils.dir/tinycthread.c.o -c /home/york/CLionProjects/socketTest/TCPserver/threadutils/tinycthread.c
+	cd /home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/threadutils.dir/tinycthread.c.o -c /home/york/CLionProjects/socketTest/TCPserver/threadutils/tinycthread.c
 
 threadutils/CMakeFiles/threadutils.dir/tinycthread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/threadutils.dir/tinycthread.c.i"
-	cd /home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/york/CLionProjects/socketTest/TCPserver/threadutils/tinycthread.c > CMakeFiles/threadutils.dir/tinycthread.c.i
+	cd /home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/york/CLionProjects/socketTest/TCPserver/threadutils/tinycthread.c > CMakeFiles/threadutils.dir/tinycthread.c.i
 
 threadutils/CMakeFiles/threadutils.dir/tinycthread.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/threadutils.dir/tinycthread.c.s"
-	cd /home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/york/CLionProjects/socketTest/TCPserver/threadutils/tinycthread.c -o CMakeFiles/threadutils.dir/tinycthread.c.s
+	cd /home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/york/CLionProjects/socketTest/TCPserver/threadutils/tinycthread.c -o CMakeFiles/threadutils.dir/tinycthread.c.s
 
 # Object files for target threadutils
 threadutils_OBJECTS = \

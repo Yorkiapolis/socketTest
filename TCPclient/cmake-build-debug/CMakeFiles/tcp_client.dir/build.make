@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/164/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /opt/cmake-3.20.0/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/164/bin/cmake/linux/bin/cmake -E rm -f
+RM = /opt/cmake-3.20.0/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -69,15 +69,15 @@ include CMakeFiles/tcp_client.dir/flags.make
 CMakeFiles/tcp_client.dir/tcp_client.c.o: CMakeFiles/tcp_client.dir/flags.make
 CMakeFiles/tcp_client.dir/tcp_client.c.o: ../tcp_client.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/tcp_client.dir/tcp_client.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tcp_client.dir/tcp_client.c.o -c /home/york/CLionProjects/socketTest/TCPclient/tcp_client.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tcp_client.dir/tcp_client.c.o -c /home/york/CLionProjects/socketTest/TCPclient/tcp_client.c
 
 CMakeFiles/tcp_client.dir/tcp_client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tcp_client.dir/tcp_client.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/york/CLionProjects/socketTest/TCPclient/tcp_client.c > CMakeFiles/tcp_client.dir/tcp_client.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/york/CLionProjects/socketTest/TCPclient/tcp_client.c > CMakeFiles/tcp_client.dir/tcp_client.c.i
 
 CMakeFiles/tcp_client.dir/tcp_client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tcp_client.dir/tcp_client.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/york/CLionProjects/socketTest/TCPclient/tcp_client.c -o CMakeFiles/tcp_client.dir/tcp_client.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/york/CLionProjects/socketTest/TCPclient/tcp_client.c -o CMakeFiles/tcp_client.dir/tcp_client.c.s
 
 # Object files for target tcp_client
 tcp_client_OBJECTS = \

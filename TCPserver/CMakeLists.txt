@@ -4,11 +4,11 @@ get_filename_component(ProjectId ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 string(REPLACE " " "_" ProjectId ${ProjectId})
 project(${ProjectId} C)
 
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD 11)
 
-set(CMAKE_PREFIX_PATH install)
+set(CMAKE_INSTALL_PREFIX  install)
 
-set(CMAKE_INSTALL_RPATH \$origin/../lib)
+set(CMAKE_INSTALL_RPATH \$ORIGIN/../lib)
 
 include_directories("include")
 include_directories("threadutils/include")

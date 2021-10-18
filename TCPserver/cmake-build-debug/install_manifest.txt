@@ -1,0 +1,2 @@
+/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/install/lib/libthreadutils.so
+/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/install/bin/tcp_server

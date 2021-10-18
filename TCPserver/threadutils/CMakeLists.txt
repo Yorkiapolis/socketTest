@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.10.2)
+cmake_minimum_required(VERSION 3.20)
 project(threadutils C)
 
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD 11)
 
 add_library(threadutils SHARED tinycthread.c)
 target_link_libraries(threadutils pthread)

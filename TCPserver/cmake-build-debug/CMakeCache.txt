@@ -215,9 +215,6 @@ TCPserver_SOURCE_DIR:STATIC=/home/york/CLionProjects/socketTest/TCPserver
 //Value Computed by CMake
 threadutils_BINARY_DIR:STATIC=/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils
 
-//Dependencies for the target
-threadutils_LIB_DEPENDS:STATIC=general;pthread;
-
 //Value Computed by CMake
 threadutils_SOURCE_DIR:STATIC=/home/york/CLionProjects/socketTest/TCPserver/threadutils
 

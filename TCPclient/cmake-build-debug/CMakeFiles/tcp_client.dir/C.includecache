@@ -12,7 +12,7 @@ stdio.h
 limits.h
 -
 
-/home/york/CLionProjects/socketTest/TCPclient/main.c
+/home/york/CLionProjects/socketTest/TCPclient/tcp_client.c
 string.h
 -
 stdlib.h

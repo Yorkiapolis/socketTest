@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/york/CLionProjects/socketTest/TCPserver/tcp_server.c" "/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles/tcp_server.dir/tcp_server.c.o"
-  "/home/york/CLionProjects/socketTest/TCPserver/threadutils/tinycthread.c" "/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles/tcp_server.dir/threadutils/tinycthread.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -25,6 +24,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/CMakeFiles/threadutils.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="threadutils"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\threadutils\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="threadutils">
+				<Option output="/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/libthreadutils.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/include"/>
+					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/threadutils/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/Makefile&quot;  VERBOSE=1 threadutils"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="threadutils/fast">
+				<Option output="/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/libthreadutils.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/include"/>
+					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/threadutils/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/Makefile&quot;  VERBOSE=1 threadutils/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/york/CLionProjects/socketTest/TCPserver/threadutils/tinycthread.c">
+			<Option target="threadutils"/>
+		</Unit>
+		<Unit filename="/home/york/CLionProjects/socketTest/TCPserver/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/york/CLionProjects/socketTest/TCPserver/threadutils/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\threadutils\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -47,11 +47,11 @@ int main() {
                 break;
             }
         }
-        if(strcmp(next, "end") == 0){
+        if(strcmp(next, "end\n") == 0){
             close(_sock);
             break;
         }
-        write(_sock, buf, strlen(buf)+1);
+        write(_sock, buf, strlen(buf)-1); // -1 means striping the character '\n'
         memset(buf, 0, sizeof(buf));
         ssize_t readRes = read(_sock, buf, BUFSIZE);
         if(readRes < 0){

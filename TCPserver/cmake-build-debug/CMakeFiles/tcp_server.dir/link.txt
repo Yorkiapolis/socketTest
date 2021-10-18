@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/tcp_server.dir/tcp_server.c.o CMakeFiles/tcp_server.dir/threadutils/tinycthread.c.o -o tcp_server  -lpthread 
+/usr/bin/gcc -g CMakeFiles/tcp_server.dir/tcp_server.c.o -o tcp_server  -Wl,-rpath,/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils: -lpthread threadutils/libthreadutils.so -lpthread 

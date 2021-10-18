@@ -5,6 +5,3 @@ CMakeFiles/tcp_server.dir/tcp_server.c.o: \
  ../include/io_utils.h \
  ../threadutils/include/tinycthread.h \
  ../tcp_server.c
-CMakeFiles/tcp_server.dir/threadutils/tinycthread.c.o: \
- ../threadutils/include/tinycthread.h \
- ../threadutils/tinycthread.c

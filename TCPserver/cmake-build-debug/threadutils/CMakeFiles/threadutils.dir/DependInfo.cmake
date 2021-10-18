@@ -8,12 +8,19 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/york/CLionProjects/socketTest/TCPclient/main.c" "/home/york/CLionProjects/socketTest/TCPclient/cmake-build-debug/CMakeFiles/TCPclient.dir/main.c.o"
+  "/home/york/CLionProjects/socketTest/TCPserver/threadutils/tinycthread.c" "/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/CMakeFiles/threadutils.dir/tinycthread.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "threadutils_EXPORTS"
+  )
+
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../include"
+  "../threadutils/include"
   )
 
 # The set of dependency files which are needed:

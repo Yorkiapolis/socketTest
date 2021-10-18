@@ -45,10 +45,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/169/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/164/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/169/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/164/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -64,29 +64,46 @@ CMAKE_BINARY_DIR = /home/york/CLionProjects/socketTest/TCPserver/cmake-build-deb
 
 # The main recursive "all" target.
 all: CMakeFiles/tcp_server.dir/all
+all: threadutils/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: threadutils/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/tcp_server.dir/clean
+clean: threadutils/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory threadutils
+
+# Recursive "all" directory target.
+threadutils/all: threadutils/CMakeFiles/threadutils.dir/all
+.PHONY : threadutils/all
+
+# Recursive "preinstall" directory target.
+threadutils/preinstall:
+.PHONY : threadutils/preinstall
+
+# Recursive "clean" directory target.
+threadutils/clean: threadutils/CMakeFiles/threadutils.dir/clean
+.PHONY : threadutils/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tcp_server.dir
 
 # All Build rule for target.
-CMakeFiles/tcp_server.dir/all:
+CMakeFiles/tcp_server.dir/all: threadutils/CMakeFiles/threadutils.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_server.dir/build.make CMakeFiles/tcp_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_server.dir/build.make CMakeFiles/tcp_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target tcp_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target tcp_server"
 .PHONY : CMakeFiles/tcp_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tcp_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tcp_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/tcp_server.dir/rule
@@ -99,6 +116,32 @@ tcp_server: CMakeFiles/tcp_server.dir/rule
 CMakeFiles/tcp_server.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_server.dir/build.make CMakeFiles/tcp_server.dir/clean
 .PHONY : CMakeFiles/tcp_server.dir/clean
+
+#=============================================================================
+# Target rules for target threadutils/CMakeFiles/threadutils.dir
+
+# All Build rule for target.
+threadutils/CMakeFiles/threadutils.dir/all:
+	$(MAKE) $(MAKESILENT) -f threadutils/CMakeFiles/threadutils.dir/build.make threadutils/CMakeFiles/threadutils.dir/depend
+	$(MAKE) $(MAKESILENT) -f threadutils/CMakeFiles/threadutils.dir/build.make threadutils/CMakeFiles/threadutils.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target threadutils"
+.PHONY : threadutils/CMakeFiles/threadutils.dir/all
+
+# Build rule for subdir invocation for target.
+threadutils/CMakeFiles/threadutils.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 threadutils/CMakeFiles/threadutils.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles 0
+.PHONY : threadutils/CMakeFiles/threadutils.dir/rule
+
+# Convenience name for target.
+threadutils: threadutils/CMakeFiles/threadutils.dir/rule
+.PHONY : threadutils
+
+# clean rule for target.
+threadutils/CMakeFiles/threadutils.dir/clean:
+	$(MAKE) $(MAKESILENT) -f threadutils/CMakeFiles/threadutils.dir/build.make threadutils/CMakeFiles/threadutils.dir/clean
+.PHONY : threadutils/CMakeFiles/threadutils.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,3 +1,14 @@
-/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles/install/local.dir
 /home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles/tcp_server.dir
+/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles/install.dir
+/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/CMakeFiles/install/strip.dir
+/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/CMakeFiles/install/local.dir
+/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/CMakeFiles/threadutils.dir
+/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/CMakeFiles/edit_cache.dir
+/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/CMakeFiles/rebuild_cache.dir
+/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/CMakeFiles/install.dir
+/home/york/CLionProjects/socketTest/TCPserver/cmake-build-debug/threadutils/CMakeFiles/list_install_components.dir

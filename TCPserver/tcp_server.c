@@ -1,17 +1,20 @@
+//
+// Created by york on 2021/10/19.
+//
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 #include <io_utils.h>
+#include <linknodeutils.h>
 #include <tinycthread.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
 
 #define QUEUEBUFFER 16
 #define RECVBUF 512
-#define ECHO_SERVICE_PORT 1035
-#define DEBUG 0
+#define ECHO_SERVICE_PORT (unsigned short)1035
+#define DEBUG 1
 
-mtx_t mutex;
 
 typedef int SockDes;
 typedef struct {
@@ -28,7 +31,8 @@ int Process_T(const ComCliaddr *cliaddrArg) {
         ssize_t _recvLen = read(cliaddrArg->_sock, buf, RECVBUF - 1);
         if (_recvLen > 0) {
             buf[_recvLen] = '\0';
-            PRINTLNF("receive from client@[%s:%hu]: %s", cliaddr, ntohs(cliaddrArg->cliaddr.sin_port),buf);
+            PRINTLNF("receive from client@[%s:%hu]: %s", cliaddr,
+                     ntohs(cliaddrArg->cliaddr.sin_port),buf);
             fflush(stdout);
             thrd_sleep(&(struct timespec) {.tv_sec=2,}, NULL);
 
@@ -50,6 +54,8 @@ void SockCloseCallback(const char *cliaddr, SockDes _sktCLosed) {
 }
 
 int main() {
+    static int clientNum = 0;
+
     struct sockaddr_in servSockAddr = {
             .sin_family = AF_INET,
             .sin_port = htons(ECHO_SERVICE_PORT),
@@ -81,8 +87,8 @@ int main() {
         exit(-1);
     }
 
-    PRINTLNF("Server@[%s] is waiting for connections...",
-             inet_ntoa(servSockAddr.sin_addr));
+    PRINTLNF("Server@[%s:%hu] is waiting for connections...",
+             inet_ntoa(servSockAddr.sin_addr), ECHO_SERVICE_PORT);
     ComCliaddr cliaddrArg[16];
     int cnt = 0;
     for (;;) {

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/threadutils.dir/tinycthread.c.o"
-  "CMakeFiles/threadutils.dir/tinycthread.c.o.d"
   "libthreadutils.pdb"
   "libthreadutils.so"
 )

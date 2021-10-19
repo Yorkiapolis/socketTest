@@ -1,1 +1,1 @@
-/usr/bin/cc -fPIC -shared -Wl,-soname,libthreadutils.so -o libthreadutils.so CMakeFiles/threadutils.dir/tinycthread.c.o  -Wl,-rpath,:::::::::::::: -lpthread 
+/usr/bin/gcc -fPIC -g -shared -Wl,-soname,libthreadutils.so -o libthreadutils.so CMakeFiles/threadutils.dir/tinycthread.c.o  -Wl,-rpath,:::::::::::::: -lpthread 

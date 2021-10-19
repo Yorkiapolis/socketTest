@@ -26,6 +26,7 @@
 				<Compiler>
 					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/include"/>
 					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/threadutils/include"/>
+					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/linknodeutils/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -f &quot;/home/york/CLionProjects/socketTest/TCPserver/threadutils/Makefile&quot;  VERBOSE=1 threadutils"/>
@@ -43,6 +44,7 @@
 				<Compiler>
 					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/include"/>
 					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/threadutils/include"/>
+					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/linknodeutils/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -f &quot;/home/york/CLionProjects/socketTest/TCPserver/threadutils/Makefile&quot;  VERBOSE=1 threadutils/fast"/>

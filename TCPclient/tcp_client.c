@@ -1,3 +1,6 @@
+//
+// Created by york on 2021/10/19.
+//
 #include <string.h>
 #include <stdlib.h>
 #include <io_utils.h>
@@ -10,29 +13,18 @@
 typedef int SockDes;
 
 int main(int argc, char **argv) {
-    const char *arg_ip = "127.0.0.1";
+
+    if(argc != 2){
+        fputs("Argument Error\n"
+             "Please refer to the Usage --> <Server IP>", stderr);
+        exit(-1);
+    }
+    const char *arg_ip = argv[1];
     SockDes _sock = socket(AF_INET, SOCK_STREAM,
                           IPPROTO_IP);
     if(_sock < 0){
         perror("sock");
         PRINTLNF("creating server-side socket failed");
-        exit(-1);
-    }
-
-    struct sockaddr_in servCLient = {
-            .sin_family = AF_INET,
-            .sin_port = htons(atoi(argv[1])),
-            .sin_addr = htonl(INADDR_ANY),
-    };
-    PRINTLNF("client port [%hu]", ntohs(servCLient.sin_port));
-    PRINT_INT(atoi(argv[1]));
-    memset(&servCLient.sin_zero, 0,
-           sizeof(servCLient.sin_zero));
-    int bindRes = bind(_sock, (struct sockaddr *) &servCLient,
-                       sizeof(servCLient));
-    if (bindRes != 0) {
-        perror("bind");
-        PRINTLNF("\rbind failed, error[%d] occurs", bindRes);
         exit(-1);
     }
 

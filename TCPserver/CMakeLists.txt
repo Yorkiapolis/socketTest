@@ -12,6 +12,7 @@ set(CMAKE_INSTALL_RPATH \$ORIGIN/../lib)
 
 include_directories("include")
 include_directories("threadutils/include")
+include_directories("linknodeutils/include")
 
 add_subdirectory(threadutils)
 

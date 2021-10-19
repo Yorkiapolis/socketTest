@@ -4,11 +4,23 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/york/CLionProjects/socketTest/TCPserver/tcp_server.c" "/home/york/CLionProjects/socketTest/TCPserver/CMakeFiles/tcp_server.dir/tcp_server.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "include"
+  "threadutils/include"
+  "linknodeutils/include"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/york/CLionProjects/socketTest/TCPserver/tcp_server.c" "CMakeFiles/tcp_server.dir/tcp_server.c.o" "gcc" "CMakeFiles/tcp_server.dir/tcp_server.c.o.d"
   )
 
 # Targets to which this target links.

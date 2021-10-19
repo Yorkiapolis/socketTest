@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tcp_server.dir/tcp_server.c.o"
-  "CMakeFiles/tcp_server.dir/tcp_server.c.o.d"
   "tcp_server"
   "tcp_server.pdb"
 )

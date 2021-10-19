@@ -28,7 +28,7 @@ int Process_T(const ComCliaddr *cliaddrArg) {
         ssize_t _recvLen = read(cliaddrArg->_sock, buf, RECVBUF - 1);
         if (_recvLen > 0) {
             buf[_recvLen] = '\0';
-            PRINTLNF("receive from client@[%s]: %s", cliaddr, buf);
+            PRINTLNF("receive from client@[%s:%hu]: %s", cliaddr, ntohs(cliaddrArg->cliaddr.sin_port),buf);
             fflush(stdout);
             thrd_sleep(&(struct timespec) {.tv_sec=2,}, NULL);
 
@@ -83,9 +83,11 @@ int main() {
 
     PRINTLNF("Server@[%s] is waiting for connections...",
              inet_ntoa(servSockAddr.sin_addr));
+    ComCliaddr cliaddrArg[16];
+    int cnt = 0;
     for (;;) {
         struct sockaddr_in cliaddr;
-        ComCliaddr cliaddrArg;
+
         unsigned int cliaddr_len = sizeof(cliaddr);
         SockDes _sockClient = accept(_sock, (struct sockaddr *) &cliaddr,
                                      &cliaddr_len);
@@ -96,13 +98,14 @@ int main() {
         }
         PRINTLNF("connection with client@[%s] established",
                  inet_ntoa(cliaddr.sin_addr));
-        cliaddrArg.cliaddr = cliaddr;
-        cliaddrArg._sock = _sockClient;
-        cliaddrArg.callback = SockCloseCallback;
+        cliaddrArg[cnt].cliaddr = cliaddr;
+        cliaddrArg[cnt]._sock = _sockClient;
+        cliaddrArg[cnt].callback = SockCloseCallback;
         thrd_t pro_t;
-        thrd_create(&pro_t, (thrd_start_t) Process_T, &cliaddrArg);
+        thrd_create(&pro_t, (thrd_start_t) Process_T, &cliaddrArg[cnt]);
         thrd_detach(pro_t);
 
+        cnt++;
 #if DEBUG
         break;
 #endif

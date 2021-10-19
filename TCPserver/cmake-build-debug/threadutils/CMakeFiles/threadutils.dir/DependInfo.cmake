@@ -21,6 +21,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   "../threadutils/include"
+  "../linknodeutils/include"
   )
 
 # The set of dependency files which are needed:

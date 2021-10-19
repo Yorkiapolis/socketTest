@@ -1,2 +1,0 @@
-/home/york/CLionProjects/socketTest/TCPserver/install/lib/libthreadutils.so
-/home/york/CLionProjects/socketTest/TCPserver/install/bin/tcp_server

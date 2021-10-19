@@ -6,20 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/io_utils.h
-stdio.h
--
-limits.h
--
-
-../threadutils/include/tinycthread.h
-time.h
--
-pthread.h
--
-windows.h
--
-
 /home/york/CLionProjects/socketTest/TCPserver/tcp_server.c
 stdlib.h
 -
@@ -36,5 +22,19 @@ netinet/in.h
 arpa/inet.h
 -
 stdatomic.h
+-
+
+include/io_utils.h
+stdio.h
+-
+limits.h
+-
+
+threadutils/include/tinycthread.h
+time.h
+-
+pthread.h
+-
+windows.h
 -
 

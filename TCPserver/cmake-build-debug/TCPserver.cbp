@@ -46,6 +46,7 @@
 				<Compiler>
 					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/include"/>
 					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/threadutils/include"/>
+					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/linknodeutils/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
@@ -68,6 +69,7 @@
 				<Compiler>
 					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/include"/>
 					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/threadutils/include"/>
+					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/linknodeutils/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
@@ -130,6 +132,7 @@
 				<Compiler>
 					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/include"/>
 					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/threadutils/include"/>
+					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/linknodeutils/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
@@ -152,6 +155,7 @@
 				<Compiler>
 					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/include"/>
 					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/threadutils/include"/>
+					<Add directory="/home/york/CLionProjects/socketTest/TCPserver/linknodeutils/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>

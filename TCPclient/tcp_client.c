@@ -7,19 +7,18 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 
-#define ECHO_SERVICE_PORT 1035
 #define BUFSIZE 512
 
 typedef int SockDes;
 
 int main(int argc, char **argv) {
 
-    if(argc != 2){
+    if(argc != 3){
         fputs("Argument Error\n"
-             "Please refer to the Usage --> <Server IP>", stderr);
+             "Please refer to the Usage --> <Server IP> <Server Port>",
+             stderr);
         exit(-1);
     }
-    const char *arg_ip = argv[1];
     SockDes _sock = socket(AF_INET, SOCK_STREAM,
                           IPPROTO_IP);
     if(_sock < 0){
@@ -30,8 +29,8 @@ int main(int argc, char **argv) {
 
     struct sockaddr_in servAddr = {
             .sin_family = AF_INET,
-            .sin_port = htons(ECHO_SERVICE_PORT),
-            .sin_addr = inet_addr(arg_ip),
+            .sin_port = htons(atoi(argv[2])),
+            .sin_addr = inet_addr(argv[1]),
     };
     memset(&servAddr.sin_zero, 0,
            sizeof(servAddr.sin_zero));
@@ -71,7 +70,7 @@ int main(int argc, char **argv) {
             perror("receive");
             exit(-1);
         }
-        PRINTLNF("[ECHO] from server@[%s]: %s", arg_ip, buf);
+        PRINTLNF("[ECHO] from server@[%s]: %s", argv[1], buf);
     }
 
     return 0;

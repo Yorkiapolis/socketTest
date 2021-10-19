@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/york/CLionProjects/socketTest/TCPserver/include -I/home/york/CLionProjects/socketTest/TCPserver/threadutils/include
+C_INCLUDES = -I/home/york/CLionProjects/socketTest/TCPserver/include -I/home/york/CLionProjects/socketTest/TCPserver/threadutils/include -I/home/york/CLionProjects/socketTest/TCPserver/linknodeutils/include
 
 C_FLAGS = -g -std=gnu11
 

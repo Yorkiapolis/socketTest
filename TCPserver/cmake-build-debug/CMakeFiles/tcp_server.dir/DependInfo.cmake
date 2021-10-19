@@ -16,6 +16,7 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   "../threadutils/include"
+  "../linknodeutils/include"
   )
 
 # The set of dependency files which are needed:
